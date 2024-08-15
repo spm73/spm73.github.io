@@ -1,0 +1,5 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block body %}
+    <span class="alert alert-danger"><a href="{% url 'encyclopedia:entry' entry %}">{{ entry }}</a> is already an entry</span>
+{% endblock %}
